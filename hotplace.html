@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/style.css" type="text/css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Black+Han+Sans&family=Cute+Font&family=Do+Hyeon&family=Dokdo&family=East+Sea+Dokdo&family=Gaegu&family=Gamja+Flower&family=Gothic+A1&family=Gugi&family=Hi+Melody&family=Jua&family=Kirang+Haerang&family=Nanum+Brush+Script&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Noto+Sans+KR&family=Noto+Serif+KR&family=Poor+Story&family=Single+Day&family=Song+Myung&family=Stylish&family=Sunflower:wght@300&family=Yeon+Sung&display=swap"
+      rel="stylesheet"
+    />
+    <script src="src/placeFunction.js"></script>
+    <title>코로나 19 알리미</title>
+  </head>
+  <body>
+    <h1>코로나 19 알리미</h1>
+    <div class="menu">
+      <a href="state.html">현황</a>
+      <a href="news.html">뉴스</a>
+      <a href="hotplace.html"><strong>Hot Place</strong></a>
+      <a href="world.html">관심 해외 소식</a>
+    </div>
+    <ul id="placeList">
+      <!-- 앵커 기능을 이용해 찾고자 하는 지역의 정보에 빠르게 접근할 수 있다. -->
+      <li id="list1"><a id="anchor1" href="#place1">홍대</a></li>
+      <li id="list2"><a id="anchor2" href="#place2">이태원</a></li>
+      <li id="list3"><a id="anchor3" href="#place3">신촌</a></li>
+    </ul>
+    <div id="placeInfo">
+      <!-- 지역 이름, 관련 정보, 수정/삭제, 저장 버튼을 이용해 정보를 관리한다. -->
+      <div id="place1">
+        <h3 id="place1Name">홍대</h3>
+        <p id="place1News">
+          위드 코로나(단계적 일상회복) 시행 이후 네 번째 주말을 맞은 27일 저녁
+          서울 번화가는 신종 코로나바이러스 감염증 (코로나19)사태 이전처럼
+          북적였다.<br /><br />
+          오후 7시 마포구 홍대입구역 3번 출구 앞은 패딩·롱코트 등을 입은 인파로
+          가득했다.<br />
+          인근 경의선숲길 곳곳에는 캐럴이 울려퍼졌고, 식당·술집·카페에서는 빈
+          좌석을 찾기 어려웠다.<br />
+          연남동 한 피자집 앞에는 20명에 가까운 인원이 입장을 기다렸다.<br />
+          ‘현재 대기 14팀’이란 문구가 보였다.<br />
+          골목마다 있는 ‘4컷 사진’ 사진관의 건물 밖까지 친구·연인들이 줄을 서고
+          있었다.<br />
+          이날 홍대 인파는 마스크를 착용하는 등 방역수칙을 대체로 준수했다.<br />
+          다만 담배를 피우는 거리나 인산인해를 이루는 상점에서는 마스크를 벗고
+          대화하거나 다닥다닥 붙어 있는 ‘아찔한’ 장면이 연출됐다.<br /><br />
+          시민들은 사흘 뒤 ‘시행 한달’을 맞는 위드코로나에 적응한 모습이지만
+          신종 코로나바이러스 감염증(코로나19) 확산 우려가 높아지는 상황이다.<br />
+          질병관리청 중앙방역대책본부에 따르면 이날 0시 기준 하루 확진자는
+          4068명으로 ‘4일 연속 4000명 감염’을 기록했다.
+        </p>
+        <input
+          id="place1delete"
+          type="button"
+          onclick="deletePlace1()"
+          value="삭제"
+        />
+        <input
+          id="place1button"
+          type="button"
+          onclick="editPlace1()"
+          value="수정"
+        />
+      </div>
+      <div id="place2">
+        <h3 id="place2Name">이태원</h3>
+        <p id="place2News">
+          서울시는 매출하락으로 막다른 골목에 내몰린 소상공인을 돕기 위해
+          ‘상권회복특별지원상품권’을 발행한다.<br />
+          종로‧청계, 명동‧남대문‧북창, 동대문 패션타운, 이태원 도심 4대 관광특구
+          전용 상품권 1,000억 원과 25개 자치구 내 특별피해상권에서 사용 가능한
+          상품권 2,500억 원 등 총 3,500억 원 규모다.<br />
+          이번에 발행하는 ‘상권회복특별지원상품권’은 1인당 50만 원까지 10%
+          할인된 가격으로 구매할 수 있다.<br />
+          또 결제금액의 10%, 월 최대 2만 원까지 페이백 받을 수 있다.<br />
+          상품권 사용 유효기간은 구매일로부터 6개월까지다.<br /><br />
+          신종 코로나바이러스 감염증(코로나19) 확산으로 큰 타격을 입었던 서울
+          용산구 이태원 일대 거리 공연이 다시 시작된다.<br />
+          용산구는 이태원 거리에서 ‘다시 일상 with 피아노 버스킹’을 연다고 25일
+          밝혔다.<br />
+          피아노 버스킹은 이태원관광특구 활성화를 위해 27일부터 다음 달 5일까지
+          주말 기간 4차례 진행한다.<br />
+          용산구는 녹사평역 광장에서 이태원역 2번 출구까지 이어지는 이태원로
+          보도 11곳에 피아노 15대를 설치할 계획이다.<br />
+          이 기간 이태원을 방문한 사람이면 누구나 거리에 설치된 피아노를
+          자유롭게 연주할 수 있다.
+        </p>
+        <input
+          id="place2delete"
+          type="button"
+          onclick="deletePlace2()"
+          value="삭제"
+        />
+        <input
+          id="place2button"
+          type="button"
+          onclick="editPlace2()"
+          value="수정"
+        />
+      </div>
+      <div id="place3">
+        <h3 id="place3Name">신촌</h3>
+        <p id="place3News">
+          이달 들어 위드 코로나에 들어가면서 대학 캠퍼스 주변이 북적이기
+          시작했다.<br />
+          사회적 거리두기 장기화로 어려움을 겪던 식당·카페 등 자영업자들은 “한숨
+          돌리게 됐다”는 반응이다.<br />
+          반면 백신패스가 적용되는 일부 다중이용시설 업주들은 “오히려 상황이
+          악화됐다”며 울상을 짓고 있다.<br /><br />
+          영업시간 제한이 없어지면서 대학가 주변에는 늦은 저녁시간에도 사람이
+          가득했다.<br />
+          지난 4일 밤 10시 서울 서강대 인근 40석 규모의 선술집은 만석이었다.<br />
+          한 손님이 대기시간을 기다리지 못하고 다른 식당으로 발길을 옮기는
+          모습도 눈에 띄었다.<br /><br />
+          연세대 정문 앞에 있는 횟집 직원 이유진 씨(37)는 “한두 달 전만 해도
+          하루 매출이 30만원 아래로 내려간 적이 많은데, 지난 3일 매출은
+          93만4000원이 찍혔다”며<br />
+          “요즘은 단체 손님이 늘어 4인 테이블 두 개를 붙이는 일이 많고, 술과
+          음식 주문량도 크게 증가했다”고 말했다.
+        </p>
+        <input
+          id="place3delete"
+          type="button"
+          onclick="deletePlace3()"
+          value="삭제"
+        />
+        <input
+          id="place3button"
+          type="button"
+          onclick="editPlace3()"
+          value="수정"
+        />
+      </div>
+      <br />
+      <br />
+      <!-- 지역을 추가로 등록하여 정보를 관리할 수 있다.
+      다만 하나의 지역만을 추가로 등록할 수 있다. -->
+      <input
+        id="addbutton"
+        type="button"
+        onclick="addNewPlace()"
+        value="지역 추가"
+      />
+    </div>
+  </body>
+</html>

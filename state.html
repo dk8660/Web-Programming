@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/style.css" type="text/css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Black+Han+Sans&family=Cute+Font&family=Do+Hyeon&family=Dokdo&family=East+Sea+Dokdo&family=Gaegu&family=Gamja+Flower&family=Gothic+A1&family=Gugi&family=Hi+Melody&family=Jua&family=Kirang+Haerang&family=Nanum+Brush+Script&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Noto+Sans+KR&family=Noto+Serif+KR&family=Poor+Story&family=Single+Day&family=Song+Myung&family=Stylish&family=Sunflower:wght@300&family=Yeon+Sung&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 인터넷에서 폰트를 가져와 사용하였다. -->
+    <title>코로나 19 알리미</title>
+    <script src="src/ruleEditFunction.js"></script>
+  </head>
+  <body>
+    <h1>코로나 19 알리미</h1>
+    <div class="menu">
+      <!--페이지 간 이동을 다룬다  -->
+      <a href="state.html"><strong>현황</strong></a>
+      <a href="news.html">뉴스</a>
+      <a href="hotplace.html">Hot Place</a>
+      <a href="world.html">관심 해외 소식</a>
+    </div>
+    <table class="rule">
+      <!-- 해당 업종이 규제된 내용을 표기한다. 표를 이용하여 간격을 맞추었다. -->
+      <tr>
+        <td><strong>일반 식당</strong></td>
+        <td>
+          <div id="restaurant_time_parent">
+            <span id="restaurant_time">00</span>
+            <!-- id를 이용하여 개별적으로 표기하고 저장할 수 있게 하였다.
+            추가로 빨간색 글씨를 사용해 눈에 잘 띄게 표기하였다.
+            아래 다른 업종도 이와 마찬가지이다. -->
+          </div>
+          <span class="pointLetter">시</span>까지 입장 가능하며, 최대
+          <div id="restaurant_member_parent">
+            <span id="restaurant_member">3</span>
+          </div>
+          <span class="pointLetter">명</span>을 동반할 수 있다.
+        </td>
+        <td>
+          <div id="restaurant_button_parent">
+            <input
+              id="restaurant_button"
+              type="button"
+              value="수정"
+              onclick="restaurantEdit()"
+            />
+          </div>
+        </td>
+      </tr>
+      <br />
+      <tr>
+        <td><strong>PC방</strong></td>
+        <td>
+          <div id="PCcafe_time_parent"><span id="PCcafe_time">00</span></div>
+          <span class="pointLetter">시</span>까지 입장 가능하며, 최대
+          <div id="PCcafe_member_parent"><span id="PCcafe_member">3</span></div>
+          <span class="pointLetter">명</span>을 동반할 수 있다.
+        </td>
+        <td>
+          <div id="PCcafe_button_parent">
+            <input
+              id="PCcafe_button"
+              type="button"
+              value="수정"
+              onclick="PCcafeEdit()"
+            />
+          </div>
+        </td>
+      </tr>
+      <br />
+      <tr>
+        <td><strong>노래방</strong></td>
+        <td>
+          <div id="karaoke_time_parent"><span id="karaoke_time">00</span></div>
+          <span class="pointLetter">시</span>까지 입장 가능하며, 최대
+          <div id="karaoke_member_parent">
+            <span id="karaoke_member">3</span>
+          </div>
+          <span class="pointLetter">명</span>을 동반할 수 있다.
+        </td>
+        <td>
+          <div id="karaoke_button_parent">
+            <input
+              id="karaoke_button"
+              type="button"
+              value="수정"
+              onclick="karaokeEdit()"
+            />
+          </div>
+        </td>
+      </tr>
+      <br />
+      <tr>
+        <td><strong>주점</strong></td>
+        <td>
+          <div id="bar_time_parent"><span id="bar_time">00</span></div>
+          <span class="pointLetter">시</span>까지 입장 가능하며, 최대
+          <div id="bar_member_parent"><span id="bar_member">3</span></div>
+          <span class="pointLetter">명</span>을 동반할 수 있다.
+        </td>
+        <td>
+          <div id="bar_button_parent">
+            <input
+              id="bar_button"
+              type="button"
+              value="수정"
+              onclick="barEdit()"
+            />
+          </div>
+        </td>
+      </tr>
+    </table>
+    <!-- iframe을 이용해 실시간으로 코로나 확진자 수를 표기하는 사이트를 인용하였다. -->
+    <iframe
+      id="state"
+      src="http://ncov.mohw.go.kr/"
+      width="1000"
+      height="700"
+    ></iframe>
+  </body>
+</html>

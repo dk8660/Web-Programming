@@ -1,0 +1,396 @@
+body {
+  background-color: rgba(145, 145, 145, 0.137);
+}
+
+h1 {
+  text-align: center;
+  display: block;
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.menu {
+  display: block;
+  font-family: "Nanum Gothic", sans-serif;
+  border-style: solid;
+  border-left: 0px;
+  border-right: 0px;
+  border-color: red;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.menu a {
+  color: black;
+  font-size: 25px;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+a strong {
+  font-size: 35px;
+}
+
+.rule {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  padding: 50px;
+  font-size: 23px;
+  font-family: "Do Hyeon", sans-serif;
+  border-collapse: collapse;
+}
+
+.rule tr:hover {
+  background: rgba(174, 110, 235, 0.329);
+}
+
+.rule td {
+  padding: 15px;
+}
+
+.rule strong {
+  font-size: 27px;
+  margin-right: 70px;
+}
+
+.rule div {
+  display: inline;
+}
+
+.rule span {
+  color: rgb(202, 0, 0);
+}
+
+.rule input {
+  width: 40px;
+  height: 25px;
+  font-size: 20px;
+  background-color: aliceblue;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+#restaurant_button {
+  width: 70px;
+  height: 30px;
+  font-size: 20px;
+  background-color: rgb(85, 32, 172);
+  color: white;
+  border: 0px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+#PCcafe_button {
+  width: 70px;
+  height: 30px;
+  font-size: 20px;
+  background-color: rgb(85, 32, 172);
+  color: white;
+  border: 0px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+#karaoke_button {
+  width: 70px;
+  height: 30px;
+  font-size: 20px;
+  background-color: rgb(85, 32, 172);
+  color: white;
+  border: 0px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+#bar_button {
+  width: 70px;
+  height: 30px;
+  font-size: 20px;
+  background-color: rgb(85, 32, 172);
+  color: white;
+  border: 0px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+#state {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.news {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.publisher {
+  display: inline-block;
+  font-size: 45px;
+  margin-left: 10%;
+}
+
+.newTab {
+  font-size: 25px;
+  display: inline-block;
+  color: rgb(21, 77, 151);
+  text-decoration: none;
+  margin-left: 54%;
+}
+
+.newsframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#img {
+  width: 1000px;
+  height: 800px;
+}
+
+#placeList {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+ul > li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+ul > li:hover {
+  background: rgba(174, 110, 235, 0.329);
+}
+
+ul > li > a {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+#placeInfo > div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#placeInfo > div > input {
+  font-size: 25px;
+  width: 100px;
+}
+
+#placeInfo > div > textarea {
+  width: 100%;
+  height: 600px;
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#place1Name {
+  display: block;
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 40px;
+  background-color: none;
+}
+
+#place1News {
+  display: block;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-color: rgb(83, 83, 83);
+}
+
+#place1button {
+  font-size: 25px;
+  background-color: rgb(85, 32, 172);
+  color: white;
+  border: 0px;
+  font-family: "Gowun Dodum", sans-serif;
+  float: right;
+}
+
+#place1delete {
+  font-size: 25px;
+  background-color: rgb(85, 32, 172);
+  color: white;
+  border: 0px;
+  font-family: "Gowun Dodum", sans-serif;
+  float: right;
+  margin-left: 10px;
+}
+
+#place2Name {
+  display: block;
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 40px;
+}
+
+#place2News {
+  display: block;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-color: rgb(83, 83, 83);
+}
+
+#place2button {
+  background-color: rgb(85, 32, 172);
+  color: white;
+  border: 0px;
+  font-family: "Gowun Dodum", sans-serif;
+  border: 0px;
+  float: right;
+}
+
+#place2delete {
+  font-size: 25px;
+  background-color: rgb(85, 32, 172);
+  color: white;
+  border: 0px;
+  font-family: "Gowun Dodum", sans-serif;
+  float: right;
+  margin-left: 10px;
+}
+
+#place3Name {
+  display: block;
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 40px;
+  background-color: none;
+}
+
+#place3News {
+  display: block;
+  font-size: 20px;
+  font-family: "Nanum Gothic", sans-serif;
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-color: rgb(83, 83, 83);
+}
+
+#place3button {
+  font-size: 25px;
+  background-color: rgb(85, 32, 172);
+  color: white;
+  border: 0px;
+  font-family: "Gowun Dodum", sans-serif;
+  float: right;
+}
+
+#place3delete {
+  font-size: 25px;
+  background-color: rgb(85, 32, 172);
+  color: white;
+  border: 0px;
+  font-family: "Gowun Dodum", sans-serif;
+  float: right;
+  margin-left: 10px;
+}
+
+#newPlaceName {
+  display: block;
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 40px;
+  background-color: none;
+}
+
+#newPlaceNews {
+  display: block;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-color: rgb(83, 83, 83);
+}
+
+#newPlacebutton {
+  font-size: 25px;
+  background-color: rgb(85, 32, 172);
+  color: white;
+  border: 0px;
+  font-family: "Gowun Dodum", sans-serif;
+  float: right;
+}
+
+#newPlacedelete {
+  font-size: 25px;
+  background-color: rgb(85, 32, 172);
+  color: white;
+  border: 0px;
+  font-family: "Gowun Dodum", sans-serif;
+  float: right;
+  margin-left: 10px;
+}
+
+#addbutton {
+  display: block;
+  font-family: "Nanum Gothic", sans-serif;
+  background-color: rgba(255, 0, 149, 0.76);
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+  border: 0px;
+  border-radius: 20px 20px 20px 20px;
+  color: white;
+  width: 500px;
+}
+
+#storage {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#country {
+  font-size: 30px;
+  width: 38%;
+  font-family: "Nanum Gothic", sans-serif;
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-color: rgb(83, 83, 83);
+}
+
+#patient {
+  font-size: 30px;
+  width: 38%;
+  margin-left: 1%;
+  font-family: "Nanum Gothic", sans-serif;
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-color: rgb(83, 83, 83);
+}
+
+#saveCountry {
+  font-size: 33px;
+  width: 80px;
+  margin-left: 1%;
+  background-color: rgb(85, 32, 172);
+  color: white;
+  border: 0px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+#searchCountry {
+  font-size: 33px;
+  width: 80px;
+  margin-left: 1%;
+  background-color: rgb(85, 32, 172);
+  color: white;
+  border: 0px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+#img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+  height: 700px;
+}

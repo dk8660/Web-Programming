@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/style.css" type="text/css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Black+Han+Sans&family=Cute+Font&family=Do+Hyeon&family=Dokdo&family=East+Sea+Dokdo&family=Gaegu&family=Gamja+Flower&family=Gothic+A1&family=Gugi&family=Hi+Melody&family=Jua&family=Kirang+Haerang&family=Nanum+Brush+Script&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Noto+Sans+KR&family=Noto+Serif+KR&family=Poor+Story&family=Single+Day&family=Song+Myung&family=Stylish&family=Sunflower:wght@300&family=Yeon+Sung&display=swap"
+      rel="stylesheet"
+    />
+    <title>코로나 19 알리미</title>
+  </head>
+  <body>
+    <h1>코로나 19 알리미</h1>
+    <div class="menu">
+      <a href="state.html">현황</a>
+      <a href="news.html"><strong>뉴스</strong></a>
+      <a href="hotplace.html">Hot Place</a>
+      <a href="world.html">관심 해외 소식</a>
+    </div>
+    <div class="news">
+      <!-- 뉴스 웹 사이트를 iframe으로 인용하고, a 태그를 통해 새 창에서도 볼 수 있게 하였다. -->
+      <p class="publisher">조선일보</p>
+      <a class="newTab" href="https://www.chosun.com/corona19/" target="_blank"
+        >새 창에서 보기</a
+      >
+      <iframe
+        class="newsframe"
+        src="https://www.chosun.com/corona19/"
+        width="1100"
+        height="700"
+      ></iframe>
+    </div>
+    <div class="news">
+      <p class="publisher">연합뉴스</p>
+      <a
+        class="newTab"
+        href="https://www.yna.co.kr/safe/index?site=navi_safe_depth01"
+        target="_blank"
+        >새 창에서 보기</a
+      >
+      <iframe
+        class="newsframe"
+        src="https://www.yna.co.kr/safe/index?site=navi_safe_depth01"
+        width="1100"
+        height="700"
+      ></iframe>
+    </div>
+    <div class="news">
+      <p class="publisher">중앙일보</p>
+      <a
+        class="newTab"
+        href="https://www.joongang.co.kr/issue/11460"
+        target="_blank"
+        >새 창에서 보기</a
+      >
+      <iframe
+        class="newsframe"
+        src="https://www.joongang.co.kr/issue/11460"
+        width="1100"
+        height="700"
+      ></iframe>
+    </div>
+  </body>
+</html>
